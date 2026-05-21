@@ -28,7 +28,6 @@ import { TypeOrmModule } from '@nestjs/typeorm';
         database: config.get('DB_NAME'),
         // Automatically load entities registered via TypeOrmModule.forFeature
         autoLoadEntities: true,
-        entities: [],
         synchronize: config.get('NODE_ENV') !== 'production',
         logging: config.get('NODE_ENV') !== 'production',
       }),
